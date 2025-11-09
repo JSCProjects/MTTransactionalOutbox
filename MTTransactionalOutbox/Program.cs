@@ -1,10 +1,16 @@
 ﻿using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Hosting;
+using Microsoft.Extensions.Logging;
 using MTTransactionalOutbox.Infrastructure.Database;
+using MTTransactionalOutbox.Infrastructure.Logging;
 using MTTransactionalOutbox.Infrastructure.MassTransit;
 
 var builder = Host
     .CreateApplicationBuilder(args);
+
+builder.Logging.ClearProviders();
+builder.Logging.AddConsole();
+builder.Logging.AddProvider(new FileLoggerProvider("app.log"));
 
 builder.Configuration
     .SetBasePath(Directory.GetCurrentDirectory())
@@ -16,9 +22,6 @@ builder.Configuration
 builder
     .ConfigureDatabase()
     .ConfigureMassTransit();
-
-var debug = builder.Configuration.GetDebugView();
-Console.WriteLine(debug);
 
 var host = builder.Build();
 await host.RunAsync();
