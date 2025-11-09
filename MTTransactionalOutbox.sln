@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTTransactionalOutbox", "MTTransactionalOutbox\MTTransactionalOutbox.csproj", "{C7172849-D1B3-4187-9082-B457D66A1A27}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Messages", "Messages\Messages.csproj", "{D35C8135-79D5-484A-AE2D-51DCC4E605D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MTClient", "MTClient\MTClient.csproj", "{F1A45BBE-615A-4D5F-AC51-BFAF470C3E76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7172849-D1B3-4187-9082-B457D66A1A27}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7172849-D1B3-4187-9082-B457D66A1A27}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7172849-D1B3-4187-9082-B457D66A1A27}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7172849-D1B3-4187-9082-B457D66A1A27}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D35C8135-79D5-484A-AE2D-51DCC4E605D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D35C8135-79D5-484A-AE2D-51DCC4E605D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D35C8135-79D5-484A-AE2D-51DCC4E605D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D35C8135-79D5-484A-AE2D-51DCC4E605D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F1A45BBE-615A-4D5F-AC51-BFAF470C3E76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F1A45BBE-615A-4D5F-AC51-BFAF470C3E76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F1A45BBE-615A-4D5F-AC51-BFAF470C3E76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F1A45BBE-615A-4D5F-AC51-BFAF470C3E76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
